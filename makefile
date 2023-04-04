@@ -23,7 +23,7 @@ coverage: ## Run code coverage
 
 lcov-report: coverage ## Generate lcov report
 	mkdir lcov-report
-	lcov --capture --directory . --output-file lcov-report/coverage.info
+	lcov --capture --directory . --output-file lcov-report/coverage.txt
 	genhtml lcov-report/coverage.info --output-directory lcov-report
 
 gcovr-report: coverage ## Generate gcovr report
